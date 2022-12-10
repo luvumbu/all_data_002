@@ -1,0 +1,196 @@
+<div class="colors0 display_none" id="colors_block">
+  <!-- 
+    <div class="colors00">
+
+
+            <div class="colors_02 colors_001" onclick="number_n(this)" title="10">
+        <b>
+            TOP 10 
+
+        </b>
+            </div>
+            <div class="colors_02 colors_002" onclick="number_n(this)" title="50">
+           <b>
+            TOP 50 
+           </b>
+            </div>
+            <div class="colors_02 colors_003" onclick="number_n(this)" title="100">
+           <b>
+            TOP 100 
+           </b>
+            </div>
+            <div class="colors_02 colors_004" onclick="number_n(this)" title="200">
+           <b>
+            TOP 200 
+           </b>
+            </div>
+</div>
+ -->
+  </div>
+  
+  
+
+  <style>
+    .colors00{
+ 
+ display: flex;
+ justify-content: space-around;
+ width: 200px;
+ flex-wrap: wrap;
+ margin: auto;
+ color: white;
+ padding: 10px;
+    }
+    .colors0{
+ 
+ 
+
+    }
+    .colors_001,.colors_002,.colors_003,.colors_004{
+      width:85px;
+      height:85px; 
+    text-shadow: 1px 1px black;
+      margin: 2px;
+ 
+      border:1px solid var(--blue) ;  
+      background-color: var(--blue);
+ 
+    }
+    .colors_001:hover,.colors_002:hover,.colors_003:hover,.colors_004:hover{
+        cursor: pointer;
+        background-color:rgba(187, 194, 52,0.6);
+        transition: 1s all ;
+    }
+
+    .colors_001{
+      border-radius: 100% 0 15px 0 ;
+    }
+    .colors_001{
+      padding-top: 30px;
+      padding-left: 15px;
+    }
+    .colors_002{
+      padding-top: 30px;
+      padding-left: 15px;
+    }
+
+    .colors_002{
+      border-radius: 0 100%  0 15px ;
+    } 
+    
+    .colors_003{
+      border-radius: 0   15px   0 100% ;
+    }
+    .colors_004{
+      border-radius: 15px 0 100%   ;
+    }
+
+   
+   
+ 
+  </style> 
+ 
+ 
+ 
+ 
+ <div id="information_1" onscroll="onscroll_function(this)" class="display_none"> </div>
+  
+ <div id="information_2" class="style_information_2"></div>
+
+
+
+
+<div   id="img_chargement" class="display_none">
+    <img src="https://www.gif-maniac.com/gifs/54/54397.gif" alt="" srcset=""   >
+
+</div> 
+
+
+ <style>
+    .chargement{
+            width: 100%;
+            margin: auto;
+            text-align: center;
+            margin-top: 100px;
+    }
+    .tr{
+        display: none;
+    }
+    .style_information_2{
+      width: 50%; 
+      margin: auto;
+      text-align: center;
+      margin-top: 100px;
+    }
+    .style_information_2 div{
+   border-bottom: 2px solid black;
+      margin: 5px;
+    
+    }
+    .style_information_2 div:hover{
+      background-color: grey;
+      transition: 1s all;
+      cursor: pointer;
+  
+    }
+ </style>
+
+ <script>
+  var number_n0 = 10 ; 
+  function number_n(_this){
+   
+    number_n0= _this.title ; 
+    x.play(); 
+  }
+
+
+
+
+  function creat_element(){
+  console.log(tab_test) ;
+  var information_2 =document.getElementById('information_2') ;
+
+  information_2.innerText=""; 
+
+
+  
+  for(var i = 1 ; i <tab_test.length-1;i++ ){
+    console.log(tab_test[i].get_result_users_nom_4_array_2) ; 
+
+    var para = document.createElement("div");
+var infos=tab_test[i].get_result_users_nom_1_array_2+' '+tab_test[i].get_result_users_nom_2_array_2+tab_test[i].get_result_users_nom_3_array_2+' '+tab_test[i].get_result_users_nom_4_array_2;    
+para.innerHTML = infos ; 
+
+var infos2 ="";
+for(var y = 0 ; y<infos.length;y++){
+  if(infos[y]==" "){
+
+  }
+  else{
+    infos2 = infos2+infos[y];
+  }
+}
+para.setAttribute("id",infos2);
+para.setAttribute("onclick","action_information_user(this)");
+
+document.getElementById("information_2").appendChild(para); 
+  }
+ }
+
+
+
+
+ function action_information_user(_this){
+ 
+  document.getElementById(_this.id).className="test";
+ }
+ </script>
+
+
+<style>
+  .test{
+    background-color: black;
+    color:white ; 
+  }
+ 
+</style>
