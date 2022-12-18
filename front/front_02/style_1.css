@@ -2,7 +2,7 @@
     .a1{
       display: flex;
       justify-content: space-around;
-      border-bottom: 5px solid var(--style_1_1);
+      border-top: 5px solid var(--style_1_1);
       flex-wrap: wrap;
   }
   .a1 div{

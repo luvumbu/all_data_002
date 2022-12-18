@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<HTML lang="fr">
+	<HEAD>
+
+		<meta charset="utf-8" />
+		
+		<LINK rel="stylesheet" type="text/css" href="../style.css">
+
+		<title>Titre du site</title>
+ 
+		<SCRIPT TYPE="text/javascript">
+	 
+			function fctCocherCase(ObjNumber)
+			{
+			 
+                
+
+
+                if(document.getElementById("Checkbox1").checked ==true){
+                         document.getElementById("Checkbox1").checked = false ;
+                }
+                else {
+                     document.getElementById("Checkbox1").checked = true ;
+                }
+			}
+		</SCRIPT>
+		
+	</HEAD>
+
+	<BODY>
+
+ 
+		</div> <!-- div bloc_page -->
+
+		<p><input type="text" name="Input1" id="Input1" value="Cliquez sur cette zone pour cocher la case via du JavaScript" size="70" onclick="fctCocherCase(1);"></p>
+		Ma case à cocher : <input TYPE=CHECKBOX UNCHECKED name="Checkbox1" id="Checkbox1" value="Pouet" type="CHECKBOX"></br>
+	</BODY>
+</HTML>
+ 
+<!DOCTYPE html>
+<HTML lang="fr">
+	<HEAD>
+
+		<SCRIPT TYPE="text/javascript">
+			function recupValeurElement(IdElement)
+			{
+				if (document.getElementById)
+				{
+					return document.getElementById(IdElement);
+				}
+				else if (document.all)
+				{
+					return document.all[IdElement];
+				}
+			}
+
+		</SCRIPT>
+		
+	</HEAD>
+
+	<BODY>
+ 
+ 		
+		
+	</BODY>
+</HTML>

@@ -31,6 +31,9 @@
     include("ip.php") ; 
 
 ?>
+
+
+<script src="model/class/js/header_variables.js"></script>
 <!DOCTYPE html>
 <html lang="fr">
 <head>

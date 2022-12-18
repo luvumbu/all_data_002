@@ -2,13 +2,7 @@
 // Deplus_information 
 // Action manuelle n°1
 
-var get_result_villes_nom_array_2_array =[] ; 
-var get_epreuve_nom_complet_array =[] ; 
-var get_club_region_array_2_array =[] ; 
-var get_club_nom_complet_array_2_array =[] ; 
-var epreuve_sex_array_2_array =[] ; 
-var get_cat_array_2_array =[] ; 
-var get_club_departement_array_2_array =[] ; 
+
 
 function action_information(_this){
   document.getElementById("information_1").innerText="" ; 
@@ -22,8 +16,7 @@ function action_information(_this){
     // document.getElementById("information_1").innerText="" ; 
      var information_1 = document.getElementById("information_1");
  
-     var scroll_plus =25 ;      
-     ii_plus =  scroll_plus;
+
      
      
      
@@ -297,6 +290,7 @@ class Array_style {
             else {
                 this.nombre.push(this.total_n[x].get_result_villes_nom_array_2);
                 get_result_villes_nom_array_2_array.push(this.total_n[x].get_result_villes_nom_array_2);
+ 
             }
           }      
           console.log("XXXXXXXXXXXXXXXXXXXXXXXXxxxx") ; 
@@ -311,6 +305,7 @@ class Array_style {
               else {
                   this.nombre.push(this.total_n[x].get_epreuve_nom_complet);
                        get_epreuve_nom_complet_array.push(this.total_n[x].get_epreuve_nom_complet);
+        
                   
               }
             }      
@@ -325,12 +320,26 @@ class Array_style {
                 else {
                     this.nombre.push(this.total_n[x].get_club_region_array_2);
                   get_club_region_array_2_array.push(this.total_n[x].get_club_region_array_2);
+                                                      
+                  abc("get_club_region_array_2__zero",x,this.total_n[x].get_club_region_array_2) ; 
+                  
+             
+ 
+                  /*
+                      get_cat_array_2__zero
+                      get_club_departement_array_2__zero
+                      get_club_nom_complet_array_2__zero
+                      get_club_region_array_2__zero
+                      epreuve_sex_array_2__zero
+                      totalzero
+                  */
                     
                 }
               }      
               //console.log("XXXXXXXXXXXXXXXXXXXXXXXXxxxx") ; 
               break;
               case "get_club_nom_complet_array_2":
+                
                 if(this.total_n[x].get_club_nom_complet_array_2!=undefined){
 //                  console.log(this.total_n[x].get_club_nom_complet_array_2);
                   if(  this.nombre.includes(this.total_n[x].get_club_nom_complet_array_2)){         
@@ -339,6 +348,18 @@ class Array_style {
                   else {
                       this.nombre.push(this.total_n[x].get_club_nom_complet_array_2);
                     get_club_nom_complet_array_2_array.push(this.total_n[x].get_club_nom_complet_array_2);
+
+                                    
+                    abc("get_club_nom_complet_array_2__zero",x,this.total_n[x].get_club_nom_complet_array_2) ;    
+ 
+                    /*
+                        get_cat_array_2__zero
+                        get_club_departement_array_2__zero
+                        get_club_nom_complet_array_2__zero
+                        get_club_region_array_2__zero
+                        epreuve_sex_array_2__zero
+                        totalzero
+                    */
                   
                     }
                 }      
@@ -347,7 +368,7 @@ class Array_style {
 
 
                 case "epreuve_sex_array_2":
-
+               
             
                   if(this.total_n[x].epreuve_sex_array_2!=undefined){
   //                  console.log(this.total_n[x].epreuve_sex_array_2);
@@ -356,13 +377,63 @@ class Array_style {
                     }
                     else {
                         this.nombre.push(this.total_n[x].epreuve_sex_array_2);
-                        epreuve_sex_array_2_array.push(this.total_n[x].epreuve_sex_array_2);
+                        epreuve_sex_array_2_array.push([this.total_n[x].epreuve_sex_array_2,false]);
+                 abc("epreuve_sex_array_2__zero",x,this.total_n[x].epreuve_sex_array_2) ;    
+
+              //  alert(this.total_n[x].epreuve_sex_array_2) ; 
+                     //   abc("epreuve_sex_array_2__zero",x,this.total_n[x].epreuve_sex_array_2__zero) ;    
+ 
+                        /*
+                            get_cat_array_2__zero
+                            get_club_departement_array_2__zero
+                            get_club_nom_complet_array_2__zero
+                            get_club_region_array_2__zero
+                            epreuve_sex_array_2__zero
+                            totalzero
+                        */
 
                       
                         
                     }
                   }      
                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  
                   break;
 
                   case "get_cat_array_2":
@@ -373,9 +444,29 @@ class Array_style {
                       }
                       else {
                           this.nombre.push(this.total_n[x].get_cat_array_2);
-                         get_cat_array_2_array.push(this.total_n[x].get_cat_array_2);
+                         get_cat_array_2_array.push([this.total_n[x].get_cat_array_2,false]);
 
-                          
+                        
+                         //   apres(get_cat_array_2_array.length,"epreuve_sex_array_2__zero") ; 
+
+                  abc("get_cat_array_2__zero",x,this.total_n[x].get_cat_array_2) ;    
+                  
+                  /*
+                      get_cat_array_2__zero
+                      get_club_departement_array_2__zero
+                      get_club_nom_complet_array_2__zero
+                      get_club_region_array_2__zero
+                      totalzero
+                  */
+
+
+
+
+
+
+
+
+                         
                       }
                     }      
                  
@@ -391,10 +482,24 @@ class Array_style {
                         else {
                             this.nombre.push(this.total_n[x].get_club_departement_array_2);
                        get_club_departement_array_2_array.push(this.total_n[x].get_club_departement_array_2);
-                           
+     
+                       
+
+                       abc("get_club_departement_array_2__zero",x,this.total_n[x].get_club_departement_array_2) ;    
+                  
+                       /*
+                           get_cat_array_2__zero
+                           get_club_departement_array_2__zero
+                           get_club_nom_complet_array_2__zero
+                           get_club_region_array_2__zero
+                           totalzero
+                       */
+     
+     
                             
                         }
                       }      
+                    
                    
                       break;                
    
@@ -431,9 +536,10 @@ function action_get_information(_this)
   document.getElementById("get_club_departement_array_2__zero").innerHTML="";
   document.getElementById("get_club_nom_complet_array_2__zero").innerHTML="";
   document.getElementById("get_club_region_array_2__zero").innerHTML="";
+  document.getElementById("get_club_region_array_2__zero").innerHTML="";
 
 
-  
+  document.getElementById("get_cat_array_2__zero").innerHTML="" ; 
 
 
 
@@ -469,7 +575,6 @@ function action_get_information(_this)
        document.getElementById("img_chargement").className="display_none";
 
 
-       console.log() ; 
 
 // DEBUT 01 
 
@@ -512,13 +617,46 @@ document.getElementById("get_club_region_array_2__").innerText=get_club_region_a
 document.getElementById("name_tag").innerText=_this.title ; 
 document.getElementById("model_1").className="" ; 
 
-
+ 
     
     }
   };
   xmlhttp.open("GET", 'https://bokonzi.com/all_data/my_doc/index.php/SELECT * FROM `info_all_array` WHERE `'+Information_title+'`="'+_this.title+'"', true);
   xmlhttp.send();
  
+}
+
+function abc(id_val,incrementation,valeur_this){
+  var nom_x =id_val+incrementation ; 
+//id_val
+//epreuve_sex_array_2__zero
+  var para = document.createElement("div");
+  para.setAttribute("id",nom_x) ; 
+  para.setAttribute("class","ax1") ;
+  document.getElementById(id_val).appendChild(para);
+
+
+
+
+
+  var para = document.createElement("div");
+  para.innerHTML="";
+
+  document.getElementById(nom_x).appendChild(para);
+  
+
+
+  var para = document.createElement("div");
+  para.innerHTML=valeur_this;
+
+  document.getElementById(nom_x).appendChild(para);
+  
+
+
+  var para = document.createElement("div");
+  para.inn=false;
+
+  document.getElementById(nom_x).appendChild(para);
 }
 
  
