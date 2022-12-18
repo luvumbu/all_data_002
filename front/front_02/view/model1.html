@@ -1,7 +1,7 @@
 
-    <div id="model_1" class=""> 
+    <div id="model_1" class="display_none"> 
    
-   <h1  class="text-center" id="name_tag" >
+   <h1  class="text-center" id="name_tag" onclick="action_final_sort()" >
         Aarhus (DEN)
     </h1>
 <div id="model1" class=""></div>
@@ -12,101 +12,13 @@
 <div id="tous_tous">
 
 </div>
-<style>
- .model1{
- 
-    display: flex;
-    justify-content: space-around;
-    width: 80% ; 
-    margin : auto ; 
-    margin-top: 50px; 
-    color: white;
- }
- 
- .model1 div {
-    width : 100% ; 
-    text-align: center;
-    background-color: var(--style_1_1);
-
-    padding: 10px;
- }
- .model1 div  sup{
- background-color: black;
- border: 2px solid white;
- padding: 5px;
- border-radius: 100%;
- }
- .model1 div:hover {
-    width : 100% ; 
-    text-align: center;
-    background-color: grey;
-   
-    cursor: pointer;
- }
-
-
-
- @media screen and (max-width: 1280px)
-    {
-        .model1{
- 
- width: 100% ; 
- 
-}
-    }
-</style>
-
-
-
-
-<style>
-  .verte{
-    background-color: greenyellow;
-  }
-</style>
-
- 
-
-<script>
-/*
-const para = document.createElement("p");
-para.innerHTML = "This is a paragraph.";
-document.getElementById("tous_tous").appendChild(para);
-*/
-</script>
-
-<style>
-    table{
-        border:1px solid black; 
-   
-width:80%; 
-margin: auto;
-margin-left : 100px; 
-text-align: center;
-    }
-    .color1:hover{
-      background-color: aqua;
-      cursor: pointer;
-      transition: 0.2s all;
-    }
-    .color1:hover{
- 
-      cursor: pointer;
-      transition: 1s all;
-    }
- th{
-    padding: 20px;
- }
-
-</style>
- 
-
+  
 
 
 <div class="a0">
   <div class="a1">
     <div></div>
-        <div>
+        <div >
           Total
         </div>
         <div>
@@ -121,13 +33,7 @@ text-align: center;
     <div onclick="myGreeting()" title="epreuve_sex_array_2__"> <img src="https://img.icons8.com/fluency-systems-regular/25/null/expand-arrow--v1.png"/></div>    
 </div>
 <div id="epreuve_sex_array_2__zero">
-  <div class="ax1"> 
-
-  <div></div>  
-   <div>Tout selectionner</div>
-   <div> Tout deselectionner</div>    
-</div>
-
+ 
 
 
 
@@ -148,32 +54,69 @@ text-align: center;
     <div id="get_cat_array_2__"> 1</div>
     <div  onclick="action_click_array(this)" title="get_cat_array_2__"> <img src="https://img.icons8.com/fluency-systems-regular/25/null/expand-arrow--v1.png"/></div>    
 </div>
+<div class="ax1"> 
+
+  <div></div>  
+  <div>
+    Tout selectionnet
+  </div>
+  <div>
+    Tout déselectionner
+  </div>    
+</div>
 <div id="get_cat_array_2__zero" class="ax0"></div>
 <div class="a1">
   <div>get_club_departement_array_2</div>
   <div id="get_club_departement_array_2__"> 1</div>
   <div  onclick="action_click_array(this)" title="get_club_departement_array_2__"> <img src="https://img.icons8.com/fluency-systems-regular/25/null/expand-arrow--v1.png"/></div>    
 </div>
+<div class="ax1"> 
+
+  <div></div>  
+  <div>
+    Tout selectionnet
+  </div>
+  <div>
+    Tout déselectionner
+  </div>    
+</div>
 <div id="get_club_departement_array_2__zero" class="ax0">
   <div class="ax1"> 
 
     <div></div>  
-     <div>Tout selectionner</div>
-     <div> Tout deselectionner</div>    
+    <div>
+      Tout selectionnet
+    </div>
+    <div>
+      Tout déselectionner
+    </div>    
   </div>
-  
 </div>
 <div class="a1">
   <div>get_club_nom_complet_array_2</div>
   <div id="get_club_nom_complet_array_2__"> 1</div>
   <div  onclick="action_click_array(this)" title="get_club_nom_complet_array_2__"> <img src="https://img.icons8.com/fluency-systems-regular/25/null/expand-arrow--v1.png"/></div>    
 </div>
+<div class="ax1"> 
+
+  <div></div>  
+  <div>
+    Tout selectionnet
+  </div>
+  <div>
+    Tout déselectionner
+  </div>    
+</div>
 <div id="get_club_nom_complet_array_2__zero" class="ax0">
   <div class="ax1"> 
 
     <div></div>  
-     <div>Tout selectionner</div>
-     <div> Tout deselectionner</div>    
+    <div>
+      Tout selectionnet
+    </div>
+    <div>
+      Tout déselectionner
+    </div>    
   </div>
   
 </div>
@@ -215,55 +158,6 @@ text-align: center;
 
 
 <style>
-  .ax0{
-   
-    max-height: 200px;
-    
-    overflow-y: scroll;
-  }
-  .a0{
-    margin: auto;
-    width: 80%;
-    margin-top: 100px;
-  }
-  .a1 ,.ax1{
-    display: flex;
-    justify-content: space-around;
-    padding: 0px;
- 
-  }
-    .ax1 div {
-    width: 33.3%;
-
-  }
-  .ax1 {
-    width: 100%;
- 
-  }
-  .ax1 div {
-    
- 
-    text-align: center;
-    border: 1px solid rgba(0,0,0,.2);
-  }
- 
-.flex_01{
-  display: flex;
- 
-  margin: auto;
-   justify-content: space-around;
-  
-  margin-top: 100px;
-  width: 100%;
-}
-.flex_00{
-  display: flex;
- 
-  margin: auto;
-  justify-content: space-around;
-  
-  
-}
 
 </style>
 <script>
@@ -367,14 +261,14 @@ for(var n = 0 ; n<epreuve_sex_array_2_array.length ;n++){
 
             var para = document.createElement("div");
 
-            para.innerHTML=epreuve_sex_array_2_array[n][0]; 
+            para.innerHTML=epreuve_sex_array_2_array[n]; 
             document.getElementById(_this.title+"zero"+n).appendChild(para);
 
             var para = document.createElement("div");
             
 if(epreuve_sex_array_2_array[n][1]==false){
 
-para.innerHTML='<input type="checkbox" id="'+epreuve_sex_array_2_array[n][0]+'_x" name="scales" title="'+epreuve_sex_array_2_array[n][0]+'" onclick="action_switch_select(this)" >';
+para.innerHTML='<input type="checkbox" id="'+epreuve_sex_array_2_array[n]+'_x" name="scales" title="'+epreuve_sex_array_2_array[n]+'" onclick="action_switch_select(this)" >';
 
 //alert(epreuve_sex_array_2_array[n][1]) ;
 //alert(_this.title) ; 
@@ -385,13 +279,13 @@ epreuve_sex_array_2_array[n][1]=true ;
 }
 else {
   
-  para.innerHTML='<input type="checkbox" id="'+epreuve_sex_array_2_array[n][0]+'_x" name="scales" title="'+epreuve_sex_array_2_array[n][0]+'" onclick="action_switch_select(this)" checked >';
+  para.innerHTML='<input type="checkbox" id="'+epreuve_sex_array_2_array[n]+'_x" name="scales" title="'+epreuve_sex_array_2_array[n]+'" onclick="action_switch_select(this)" checked >';
 
   //epreuve_sex_array_2_array[n][1]=false ; 
 }
 
-                        para.setAttribute("title",epreuve_sex_array_2_array[n][0]);
-                        para.setAttribute("id",epreuve_sex_array_2_array[n][0]);
+                        para.setAttribute("title",epreuve_sex_array_2_array[n]);
+                        para.setAttribute("id",epreuve_sex_array_2_array[n]);
    
  
 
@@ -674,6 +568,283 @@ console.log(get_club_region_array_2_array) ;
  }
 
 
+
+
+ function action_final_sort() {
+
+
+
+get_result_villes_nom_array_2_array = get_result_villes_nom_array_2_array.sort() ; 
+get_epreuve_nom_complet_array = get_epreuve_nom_complet_array.sort() ; 
+get_club_region_array_2_array = get_club_region_array_2_array.sort() ; 
+get_club_nom_complet_array_2_array = get_club_nom_complet_array_2_array.sort() ; 
+epreuve_sex_array_2_array = epreuve_sex_array_2_array.sort() ; 
+get_cat_array_2_array = get_cat_array_2_array.sort() ; 
+get_club_departement_array_2_array = get_club_departement_array_2_array.sort() ; 
+
+/*
+
+console.log(get_result_villes_nom_array_2_array) ; 
+console.log(get_epreuve_nom_complet_array) ; 
+console.log(get_club_region_array_2_array) ; 
+console.log(get_club_nom_complet_array_2_array) ; 
+console.log(epreuve_sex_array_2_array) ; 
+console.log(get_cat_array_2_array) ; 
+console.log(get_club_departement_array_2_array) ; 
+
+
+get_result_villes_nom_array_2_array
+get_epreuve_nom_complet_array
+get_club_region_array_2_array
+get_club_nom_complet_array_2_array
+epreuve_sex_array_2_array
+get_cat_array_2_array
+get_club_departement_array_2_array
+
+
+*/
+ 
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+ for(var y = 0 ; y<get_cat_array_2_array.length ; y++){
+
+  console.log(get_cat_array_2_array[y]) ; 
+  var id_val ="get_cat_array_2__zero" ;   
+  var pasval='<img src="https://img.icons8.com/ios/25/null/checked-2--v1.png"/>';
+  //Création et modulation du
+  var nom_x =id_val+y ; 
+  incrementation = y;
+
+  var valide ='<img src="'+src_negatif+'"  id="'+nom_x+'x" class="'+id_val+'" title="'+incrementation+'" />';
+//id_val
+//epreuve_sex_array_2__zero
+  var para = document.createElement("div");
+  para.setAttribute("id",nom_x) ; 
+  para.setAttribute("class","ax1") ;
+
+
+  document.getElementById(id_val).appendChild(para);
+  var para = document.createElement("div");
+ 
+   para.innerHTML=get_cat_array_2_array[y];
+  document.getElementById(nom_x).appendChild(para);
+  var para = document.createElement("div");
+  para.innerHTML=valide;
+  para.setAttribute("onclick","val_(this)") ; 
+  para.setAttribute("class",id_val) ; 
+  para.setAttribute("title",incrementation) ; 
+  document.getElementById(nom_x).appendChild(para);
+  var para = document.createElement("div");
+  para.inn=false;
+  document.getElementById(nom_x).appendChild(para);
+ 
+
+ }
+
+ // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+ /*
+
+ get_result_villes_nom_array_2_array
+get_epreuve_nom_complet_array
+get_club_region_array_2_array
+get_club_nom_complet_array_2_array
+epreuve_sex_array_2_array
+get_cat_array_2_array
+get_club_departement_array_2_array
+
+*/
+ for(var y = 0 ; y<epreuve_sex_array_2_array.length ; y++){
+
+console.log(epreuve_sex_array_2_array[y]) ; 
+var id_val ="epreuve_sex_array_2__zero" ;   
+var pasval='<img src="https://img.icons8.com/ios/25/null/checked-2--v1.png"/>';
+//Création et modulation du
+var nom_x =id_val+y ; 
+incrementation = y;
+
+var valide ='<img src="'+src_negatif+'"  id="'+nom_x+'x" class="'+id_val+'" title="'+incrementation+'" />';
+//id_val
+//epreuve_sex_array_2__zero
+var para = document.createElement("div");
+para.setAttribute("id",nom_x) ; 
+para.setAttribute("class","ax1") ;
+
+
+document.getElementById(id_val).appendChild(para);
+var para = document.createElement("div");
+
+ para.innerHTML=epreuve_sex_array_2_array[y];
+document.getElementById(nom_x).appendChild(para);
+var para = document.createElement("div");
+para.innerHTML=valide;
+para.setAttribute("onclick","val_(this)") ; 
+para.setAttribute("class",id_val) ; 
+para.setAttribute("title",incrementation) ; 
+document.getElementById(nom_x).appendChild(para);
+var para = document.createElement("div");
+para.inn=false;
+document.getElementById(nom_x).appendChild(para);
+
+
+}
+// 2222222222222222222222222222222222222222222222
+ 
+
+ /*
+
+ get_result_villes_nom_array_2_array
+get_epreuve_nom_complet_array
+get_club_region_array_2_array
+get_club_nom_complet_array_2_array
+epreuve_sex_array_2_array
+get_cat_array_2_array
+get_club_departement_array_2_array
+
+*/
+for(var y = 0 ; y<get_club_departement_array_2_array.length ; y++){
+
+console.log(get_club_departement_array_2_array[y]) ; 
+var id_val ="get_club_departement_array_2__zero" ;   
+var pasval='<img src="https://img.icons8.com/ios/25/null/checked-2--v1.png"/>';
+//Création et modulation du
+var nom_x =id_val+y ; 
+incrementation = y;
+
+var valide ='<img src="'+src_negatif+'"  id="'+nom_x+'x" class="'+id_val+'" title="'+incrementation+'" />';
+//id_val
+//epreuve_sex_array_2__zero
+var para = document.createElement("div");
+para.setAttribute("id",nom_x) ; 
+para.setAttribute("class","ax1") ;
+
+
+document.getElementById(id_val).appendChild(para);
+var para = document.createElement("div");
+
+ para.innerHTML=get_club_departement_array_2_array[y];
+document.getElementById(nom_x).appendChild(para);
+var para = document.createElement("div");
+para.innerHTML=valide;
+para.setAttribute("onclick","val_(this)") ; 
+para.setAttribute("class",id_val) ; 
+para.setAttribute("title",incrementation) ; 
+document.getElementById(nom_x).appendChild(para);
+var para = document.createElement("div");
+para.inn=false;
+document.getElementById(nom_x).appendChild(para);
+
+
+}
+
+ /// 3333333333333333333333333333333333333333
+
+  /*
+
+ get_result_villes_nom_array_2_array
+get_epreuve_nom_complet_array
+get_club_region_array_2_array
+get_club_nom_complet_array_2_array
+epreuve_sex_array_2_array
+get_cat_array_2_array
+get_club_departement_array_2_array
+
+*/
+for(var y = 0 ; y<get_club_region_array_2_array.length ; y++){
+
+console.log(get_club_region_array_2_array[y]) ; 
+var id_val ="get_club_region_array_2__zero" ;   
+var pasval='<img src="https://img.icons8.com/ios/25/null/checked-2--v1.png"/>';
+//Création et modulation du
+var nom_x =id_val+y ; 
+incrementation = y;
+
+var valide ='<img src="'+src_negatif+'"  id="'+nom_x+'x" class="'+id_val+'" title="'+incrementation+'" />';
+//id_val
+//epreuve_sex_array_2__zero
+var para = document.createElement("div");
+para.setAttribute("id",nom_x) ; 
+para.setAttribute("class","ax1") ;
+
+
+document.getElementById(id_val).appendChild(para);
+var para = document.createElement("div");
+
+ para.innerHTML=get_club_region_array_2_array[y];
+document.getElementById(nom_x).appendChild(para);
+var para = document.createElement("div");
+para.innerHTML=valide;
+para.setAttribute("onclick","val_(this)") ; 
+para.setAttribute("class",id_val) ; 
+para.setAttribute("title",incrementation) ; 
+document.getElementById(nom_x).appendChild(para);
+var para = document.createElement("div");
+para.inn=false;
+document.getElementById(nom_x).appendChild(para);
+
+
+}
+// 44444444444444444444444444444
+
+  /*
+
+ get_result_villes_nom_array_2_array
+get_epreuve_nom_complet_array
+get_club_region_array_2_array
+get_club_nom_complet_array_2_array
+epreuve_sex_array_2_array
+get_cat_array_2_array
+get_club_departement_array_2_array
+
+*/
+for(var y = 0 ; y<get_club_nom_complet_array_2_array.length ; y++){
+
+console.log(get_club_nom_complet_array_2_array[y]) ; 
+var id_val ="get_club_nom_complet_array_2__zero" ;   
+var pasval='<img src="https://img.icons8.com/ios/25/null/checked-2--v1.png"/>';
+//Création et modulation du
+var nom_x =id_val+y ; 
+incrementation = y;
+
+var valide ='<img src="'+src_negatif+'"  id="'+nom_x+'x" class="'+id_val+'" title="'+incrementation+'" />';
+//id_val
+//epreuve_sex_array_2__zero
+var para = document.createElement("div");
+para.setAttribute("id",nom_x) ; 
+para.setAttribute("class","ax1") ;
+
+
+document.getElementById(id_val).appendChild(para);
+var para = document.createElement("div");
+
+ para.innerHTML=get_club_nom_complet_array_2_array[y];
+document.getElementById(nom_x).appendChild(para);
+var para = document.createElement("div");
+para.innerHTML=valide;
+para.setAttribute("onclick","val_(this)") ; 
+para.setAttribute("class",id_val) ; 
+para.setAttribute("title",incrementation) ; 
+document.getElementById(nom_x).appendChild(para);
+var para = document.createElement("div");
+para.inn=false;
+document.getElementById(nom_x).appendChild(para);
+
+
+}
+
+ }
 
 
 
