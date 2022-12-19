@@ -3,7 +3,8 @@
 // Action manuelle n°1
 
 
- 
+ var total_length ; 
+ var total_length_2 ; 
 function action_information(_this){
   document.getElementById("model_1").className="display_none";
 
@@ -514,13 +515,16 @@ function action_get_information(_this)
     if (this.readyState == 4 && this.status == 200) {
       var myObj = JSON.parse(this.responseText);
        info_action_get_information_1  =myObj ; 
+       total_length = myObj ;
  
      //  document.getElementById("model1").className="" ;
    
      const myTimeout = setTimeout(action_final_sort,100);
 
  
-       document.getElementById("total").innerText=myObj.length ;
+       document.getElementById("total").innerText=myObj.length -2;
+
+
        document.getElementById("img_chargement").className="display_none";
 
 
@@ -835,21 +839,79 @@ get_club_region_array_2_array_valisation = get_club_region_array_2_array_valisat
  
 
 
+ 
+document.getElementById("epreuve_sex_array_2__").innerHTML =epreuve_sex_array_2_array_valisation.length ; 
+document.getElementById("get_cat_array_2__").innerHTML =get_cat_array_2_array_valisation.length ; 
+
+document.getElementById("get_club_nom_complet_array_2__").innerHTML =get_club_nom_complet_array_2_array_valisation.length ; 
+document.getElementById("get_club_departement_array_2__").innerHTML =get_club_departement_array_2_array_valisation.length ; 
+document.getElementById("get_club_region_array_2__").innerHTML =get_club_region_array_2_array_valisation.length ; 
+
+/*
+
 
 console.log(epreuve_sex_array_2_array_valisation) ; 
 console.log(get_cat_array_2_array_valisation) ; 
+
 console.log(get_club_nom_complet_array_2_array_valisation) ; 
 console.log(get_club_departement_array_2_array_valisation) ; 
 console.log(get_club_region_array_2_array_valisation) ; 
+*/ 
 
 
 
+ 
+
+console.log(epreuve_sex_array_2_array_valisation.includes("M")) ; 
+ 
+
+
+ 
+
+var total_length_2 =[]; 
+ 
+ 
+console.log("xxxXXxxxxXXX") ; 
+console.log(total_length) ; 
+console.log("xxxXXxxxxXXX") ; 
+ console.log(total_length[1].epreuve_sex_array_2) ; 
+console.log(total_length.length) ; 
+var test = [] ; 
+
+
+for(var u = 1 ; u<total_length.length -1;u++){
+ 
 
 
 
+ 
+
+ if(epreuve_sex_array_2_array_valisation.includes(total_length[u].epreuve_sex_array_2)){
+      //  total_length_2.push(total_length[u]) ; 
+          if(get_cat_array_2_array_valisation.includes(total_length[u].get_cat_array_2)){
+            //  total_length_2.push(total_length[u]) ; 
+            if(get_club_departement_array_2_array_valisation.includes(total_length[u].get_club_departement_array_2)){
+            //   total_length_2.push(total_length[u]) ; 
+            if(get_club_nom_complet_array_2_array_valisation.includes(total_length[u].get_club_nom_complet_array_2)){
+             // total_length_2.push(total_length[u]) ; 
+             if(get_club_region_array_2_array_valisation.includes(total_length[u].get_club_region_array_2)){
+              total_length_2.push(total_length[u]) ; 
+       }
+       }
+        }
+      }
+ }
+
+}
 
 
+document.getElementById("total").innerHTML=total_length_2.length ; 
 
+  
+//console.log(total_length[2]) ; 
+
+
+ 
 
 }
  
